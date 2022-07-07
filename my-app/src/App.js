@@ -1,18 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import {FunctionalGreeting, FunctionalGreetingSix} from './components/FunctionalGreetings';
-import {FunctionalGreetingWithProps, FunctionalGreetingSixWithProps} from './components/FunctionalGreetingsWithProps';
 
+import "./App.css";
+import ControlledFormHooks from "./components/ControlledFormHooks";
 
 function App() {
-  return (
-    <div className="App">
-      <FunctionalGreeting /> 
-      <FunctionalGreetingSix />
-      <FunctionalGreetingWithProps greetings="nice to meet you" name="Dan" age="25" />
-      <FunctionalGreetingSixWithProps greetings="nice to meet you ES6" name="Dave" age="525"/>
-    </div>
-  );
+  return <div className="App">
+      <ControlledFormHooks />
+  </div>;
 }
 
 export default App;
